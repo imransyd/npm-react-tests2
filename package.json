@@ -1,0 +1,19 @@
+{
+  "name": "npm-react-tests2",
+  "version": "1.0.0",
+  "description": "jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imransyd/npm-react-tests2.git"
+  },
+  "author": "Imran Syed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imransyd/npm-react-tests2/issues"
+  },
+  "homepage": "https://github.com/imransyd/npm-react-tests2#readme"
+}
