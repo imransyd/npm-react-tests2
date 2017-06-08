@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --color --notify",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "homepage": "http://imransyd.github.io/npm-react-tests2/inlamning-16/public/index.html"
   }
 }
