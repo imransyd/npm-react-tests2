@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Inlämningsuppgifter</title>
+
+  <style>
+    body { background-color: grey; }
+    .item { padding: 3px; }
+  </style>
+</head>
+<body>
+
+  <h2>Inlämning 21</h2>
+
+  <div class="item">
+  
+  <p>
+  let initialState = {
+  account :{
+     accountNo:4638965931,
+     balance:1500,
+     openAccount: true,
+
+   },
+   customer:{
+     name:'person',
+     email: "email@gmail.com",
+     number: "07445256"
+   }
+}
+
+function rootReducer(state=initialState, action) {
+    switch(action.type) {
+        case WITHDRAW:
+            return {
+                balance: state.balance - action.amount
+            };
+        default:
+            return state;
+            
+        case DEPOSIT:
+            return {
+                balance: state.balance + action.amount
+            };
+        default:
+            return state;
+            
+        case TRANSFERS:
+            return {
+                balance: state.balance - action.amount
+            };
+        default:
+            return state;    
+     }
+}
+
+const withdraw = 'WITHDRAW';
+const deposit ='DEPOSIT';
+const transferFunds ='TRANSFERS';
+    
+//ACTIONS
+function withdraw (amount) {
+   const action ={
+    type: "WITHDRAW",
+    amount:amount
+  }
+  return {action.type,action.amount}
+
+}
+function deposit (amount) {
+   const action ={
+    type: "DEPOSIT",
+    amount:amount
+  }
+  return {action.type,action.amount}
+
+}
+
+function transfers (amount, destAccount)  {
+   const action ={
+    type: "TRANSFERS",
+    amount:amount,
+    destinationAccount:destAccount
+  }
+  return {action.type,action.amount,action.destAccount}
+
+}
+
+  </p>
+  
+  </div>
+  
+</body>
+</html>
