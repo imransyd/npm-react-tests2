@@ -1,3 +1,4 @@
+//example state
 let initialState = {
   account :{
      accountNo:4638965931,
@@ -11,7 +12,7 @@ let initialState = {
      number: "07445256"
    }
 }
-
+//reducer functions
 function rootReducer(state=initialState, action) {
     switch(action.type) {
         case WITHDRAW:
